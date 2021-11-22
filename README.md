@@ -1,1 +1,1 @@
-# gipod-mariadb-template
+# gipod-mysql-template
