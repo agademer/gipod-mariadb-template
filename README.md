@@ -1,0 +1,1 @@
+# gipod-mariadb-template
