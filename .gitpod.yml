@@ -10,10 +10,6 @@ ports:
   - port: 3306
     onOpen: ignore
 tasks:
-- name: Apache
-  command: >
-    apachectl start &&
-    multitail /var/log/apache2/access.log -I /var/log/apache2/error.log
 - name: Terminal
   command: >
     echo "";
@@ -22,4 +18,9 @@ tasks:
     echo " * apachectl start";
     echo " * gp open /var/log/apache2/access.log";
     echo " * gp open /var/log/apache2/error.log";
+- name: Apache
+  command: >
+    apachectl start &&
+    multitail /var/log/apache2/access.log -I /var/log/apache2/error.log
+
 
